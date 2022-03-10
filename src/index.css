@@ -3,11 +3,99 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-container {
+  font-family: "Cera Pro";
+}
+
+.title {
+  font-size : 28px;
+  margin-top: 0px;
+}
+
+.head-form {
+  background-color: #701a7f;
+  color           : white;
+  padding         : 24px;
+}
+
+.wom-button {
+  font-weight                   : 700;
+  font-family                   : cera_pro;
+  --button-font-family          : cera_pro;
+  --button-default-height       : 44px;
+  --button-default-border-radius: 8px;
+  --button-raise-level          : 0px;
+  --button-primary-color        : #e92070;
+  --button-primary-color-hover  : #ba1a5a;
+  --button-primary-color-dark   : #ed4d8d;
+  --button-primary-color-active : #e92070;
+  --button-hover-pressure       : 0;
+  --button-disabled-color       : #f1d7e0;
+  --button-disabled-color-hover : #f1d7e0;
+  --button-disabled-color-dark  : #f1d7e0;
+  --button-disabled-color-active: #f1d7e0;
+  --button-disabled-color-light : #fff;
+  font-size                     : 16px;
+  background                    : var(--button-primary-color);
+  border                        : 1px solid var(--button-primary-color);
+  border-radius                 : 8px;
+  margin                        : 12px auto;
+  color                         : #fff;
+}
+
+.button-search {
+  width      : 120px;
+  height     : 30px;
+  margin-left: 20px;
+}
+
+button:disabled {
+  background-color: gray;
+  border          : 1px solid gray;
+
+}
+
+.wom-input-text {
+  font-family: cera_pro;
+  font-size  : 16px;
+  line-height: 20px;
+  height     : 20px;
+  color      : #494365;
+  cursor     : text;
+  padding    : 0;
+}
+
+.resultList {
+  padding: 24px;
+}
+
+.list-countries {
+  list-style-type: none;
+}
+.country-name {
+  font-size: 18px;
+  cursor: pointer;
+}
+.img-flag {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+.element-country {
+  margin-bottom: 8px;
+}
+td, th {
+  padding-left: 20px;
+  padding-right: 20px;
 }
