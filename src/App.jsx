@@ -1,7 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
-import SearchForm from './sections/search-form';
-import ResultContainer from './sections/results-container';
+import SearchForm from './components/SearchForm';
+import ResultContainer from './components/ResultsContainer';
 class App extends Component {
 	constructor(props) {
 		super(props)

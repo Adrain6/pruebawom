@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-
-class BodyData extends Component {
+export default class CountryDetail extends Component {
     render() {
         let langs = '';
         let currencies = '';
@@ -11,6 +10,7 @@ class BodyData extends Component {
             langs = langs + ' ' + langsArr[1] + ',';
         })
         langs = langs.substring(0, langs.length - 1);
+        
         currenciesEntries.forEach(currencArr => {
             currencies = currencies + ' ' + currencArr[0] + ',';
         })
@@ -40,34 +40,4 @@ class BodyData extends Component {
             </tbody>
         </table>)
     }
-}
-class GoogleMap extends Component {
-    render() {
-        let url = 'https://www.google.com/maps/embed/v1/place?key=AIzaSyDHBgd0U8zuuKRsi13iFRsUpoiBs06S5PY&q={place}';
-        return (
-            <div>
-                <iframe title={this.props.name}
-                    width="800"
-                    height="400"
-                    frameBorder="0"
-                    src={url.replace('{place}', this.props.name)} allowFullScreen>
-                </iframe>
-            </div>
-        )
-    }
-}
-export default class DetailInfo extends Component {
-    render() {
-        return (<div>
-            {
-                this.props.show
-                    ? <span>
-                        <BodyData data={this.props.country} />
-                        <GoogleMap name={this.props.country.name.common} />
-                    </span>
-                    : ''
-            }
-        </div>)
-    }
-
 }
